@@ -1,0 +1,46 @@
+.line{
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0px;
+    
+}
+.hamburger{
+    position: relative;
+   right: 10px;
+}
+ .active .line-2{
+    transition: 0;
+visibility: hidden;
+
+}
+.active .line-1{
+    transition: 3s;
+    transform: translateY(8px) rotate(45deg);
+}
+ .active .line-3{
+    transition: 3s;
+    transform: translateY(-5px) rotate(-45deg);
+}
+.navchange{
+    
+    display: block;
+    transition: 5s;
+  
+    /* height: 96vh; */
+    height: calc(100vh - 60px);
+    background-color: black;
+    position: absolute;
+    top: 60px;
+    width: 90%;
+    float: 19vw;
+    z-index: 1000;
+}
+.navchange ul{
+    display: flex;
+    height: 70%;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+
+}

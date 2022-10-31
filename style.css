@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+:root{
+    --background-purple: rgb(0, 0, 0);
+}
+header{
+    position: sticky;
+    top: 1px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    height: 60px;
+    padding:10px;
+    background-color:var(--background-purple);
+    width: 100%;
+    color: white;
+    z-index: 10000;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    order: 2;
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+
+}
+.logo{
+    font-size: 30px;
+    order: 1;
+}
+header>nav>ul >li{
+    list-style: none;
+    font-size: 27px;
+    text-transform: capitalize;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    line-height: 20px;
+    padding:20px;
+    background-color:var(--background-purple) ;
+    color: white;
+}
+.slide{
+    position: relative;
+    top: 1px;
+    background-color: black;
+}
+@media  screen and (min-width:800px) {
+    
+    img{
+        height: 80vh;
+    }
+    .big-pro{
+        flex-direction: column;
+    }
+    .text{
+        margin: 0px 0px 26px
+    }
+}
+.about{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 80%;
+    background-color: black;
+    overflow: hidden;
+}
+.aboutus{
+    width: 100%;
+    padding: 20px;
+    color: white;
+    padding: 20px;
+}
+.aboutus>p{
+    font-size: 20px;
+}
+.img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aboutus >h1{
+    text-transform: capitalize;
+    text-align: left;
+}
+.product{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+}
+.flex{
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 5px 0px;
+}
+.href{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+}
+.contact{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    width: 100%;    
+}
+.contact>h1{
+    user-select: auto;
+    position: relative;
+    bottom: 15%;
+    font-size: 38px;
+    text-transform: uppercase;
+    font-family: ui-serif;
+    text-align: center;
+    color: white;
+}
+.flex-col{
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    flex-direction: column;
+    width: fit-content;
+}
+.line{
+    width: 100vw;
+    height: 2px;
+
+    
+    background-color: rgb(255, 255, 255);
+}
+.map{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hamburger{
+    display: none;
+    order: 3;
+}
+.pro-img >img{
+    width: 200px;
+    height: 300px;
+}
+
+.products >.text >h1,h2{
+    text-align: center;
+    color: white;
+}
+.products{
+    background-color: black;
+}
+.fa-solid,.fas{
+    font-weight: 900;
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    left: -9%;
+    top: -7px;
+    color: antiquewhite;
+   
+}
+.font-29{
+    font-size: 29px;
+}
+
+.f-20{
+    font-size: 15px;
+}
+
+.product >.text{
+    user-select: auto;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.product>.text>h1,p{
+    color: white;
+    text-transform: capitalize;
+}
+.pro-img>img{
+    width: 328px;
+    height: 370px;
+}
+.contact-content{
+    display: flex;
+    width: 50vw;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 0px 0px 25px;
+    height: 32px;
+    padding: 10px;
+}
+.social>i{
+    padding-left: 30px;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    overflow: hidden;
+    background-color: black;
+}
+.slide{
+    width: 100%;
+    overflow: hidden;
+    overflow-x: hidden;
+}
+.products{
+    width: 100%;
+    overflow: hidden;
+}
